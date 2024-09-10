@@ -97,9 +97,5 @@ void HaDeckDevice::set_brightness(uint8_t value) {
     lcd.setBrightness(brightness_);
 }
 
-void HaDeckDevice::update_inactivity_period(int new_period) {
-    inactivity_period_ = new_period * 1000;  // Convert to milliseconds
-}
-
 }  // namespace hd_device
 }  // namespace esphome
